@@ -1,0 +1,23 @@
+.admin h2 {
+    color: darkcyan;
+}
+
+.admin .parent {
+    display: flex;
+}
+
+.admin .products {
+    flex: 3;
+    min-height: 100px;
+}
+
+.admin .coupons {
+    flex: 1;
+    min-height: 100px;
+}
+
+.admin .section {
+    border: 1px solid rgb(34, 110, 98);
+    border-radius: 6px;
+    padding: 10px;
+}

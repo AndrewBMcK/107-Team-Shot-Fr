@@ -37,3 +37,6 @@
   }
 }
 
+.page {
+  height: calc(100vh - 144);
+}
