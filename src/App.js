@@ -5,6 +5,7 @@ import Catalog from './pages/catalog';
 import About from './components/about';
 import Home from './components/home';
 import Admin from './pages/admin';
+import Contact from './pages/contact';
 
 
 
@@ -28,6 +29,7 @@ function App() {
           <Route path="/home" element={ <Home />} />
           <Route path="/" element={ <Home />} />
           <Route path="/admin" element={ <Admin />} />
+          <Route path="/contact" element={ <Contact />} />
           
         </Routes>
 
