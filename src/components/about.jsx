@@ -3,7 +3,7 @@ import "./about.css";
 function About() {
     return (
         <div className="about">
-            <h3>Andrew McKinnon</h3>
+            <h1>About</h1>
         </div>
     )
 }

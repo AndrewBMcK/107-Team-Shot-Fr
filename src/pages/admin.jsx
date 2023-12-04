@@ -46,29 +46,29 @@ function Admin() {
 
   return (
     <div className="admin">
-      <h2>Store Administration</h2>
+      <h1>Store Administration</h1>
 
       <div className="parent">
         <section className="products">
           <h3>Register Products</h3>
 
           <div>
-            <label className="form-label">Title</label>
+            <label className="form-label"><i class="fa-solid fa-pen"></i> Title</label>
             <input onChange={handleProductForm} name="title" type="text" className="form-control" />
           </div>
 
           <div>
-            <label className="form-label">Category</label>
+            <label className="form-label"><i class="fa-regular fa-folder-open"></i> Category</label>
             <input onChange={handleProductForm} name="category" type="text" className="form-control" />
           </div>
 
           <div>
-            <label className="form-label">Image</label>
+            <label className="form-label"><i class="fa-solid fa-image"></i> Image</label>
             <input onChange={handleProductForm} name="image" type="text" className="form-control" />
           </div>
 
           <div>
-            <label className="form-label">Price</label>
+            <label className="form-label"><i class="fa-solid fa-sack-dollar"></i> Price</label>
             <input onChange={handleProductForm} name="price" type="text" className="form-control" />
           </div>
 
@@ -82,12 +82,12 @@ function Admin() {
           <h3>Black Friday Sale</h3>
 
           <div>
-            <label className="form-label">Code</label>
+            <label className="form-label"><i class="fa-solid fa-tag"></i> Code</label>
             <input onChange={handleCouponForm} name="code" type="text" className="form-control" />
           </div>
 
           <div>
-            <label className="form-label">Discount</label>
+            <label className="form-label"><i class="fa-solid fa-percent"></i> Discount</label>
             <input onChange={handleCouponForm} name="discount" type="text" className="form-control" />
           </div>
 

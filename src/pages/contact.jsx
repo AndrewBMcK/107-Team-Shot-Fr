@@ -31,13 +31,13 @@ function Contact() {
 
   return (
     <div className="contact">
-      <h2>Contact</h2>
+      <h1>Contact</h1>
 
       <div className="form">
         <h4>Give us your info</h4>
 
         <div>
-          <label className="form-label">Name</label>
+          <label className="form-label"><i class="fa-solid fa-user"></i> Name </label>
           <input
             onChange={handleChange}
             type="text"
@@ -46,12 +46,12 @@ function Contact() {
         </div>
 
         <div>
-          <label className="form-label">Email</label>
+          <label className="form-label"><i class="fa-regular fa-envelope"></i> Email </label>
           <input onChange={handleEmail} type="email" className="form-control" />
         </div>
 
         <div>
-          <label className="form-label">Message</label>
+          <label className="form-label"><i class="fa-solid fa-pen"></i> Message</label>
           <textarea
             onChange={handleMessage}
             rows="3"

@@ -50,9 +50,7 @@ function Catalog() {
 
     return(
         <div className="catalog-container">
-            <h1>{products.length} New Items</h1>
-            
-            <button onClick={clearFilters}  className="btn btn-sm  btn-dark">all</button>
+            <button onClick={clearFilters} className="btn btn-sm  btn-dark">all</button>
             {categories.map(arrowCategories => <button onClick={() => filter(arrowCategories)} className="btn btn-sm btn-primary btn-filter">{arrowCategories}</button>)}
             <br></br>
 

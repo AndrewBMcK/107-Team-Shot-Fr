@@ -1,19 +1,22 @@
-.admin h2 {
-    color: darkcyan;
-}
 
 .admin .parent {
     display: flex;
 }
 
 .admin .products {
-    flex: 3;
+    flex: 2;
     min-height: 100px;
+    margin: 50px;
+    background-color: rgb(128, 186, 224);
+    padding: 15px;
 }
 
 .admin .coupons {
     flex: 1;
     min-height: 100px;
+    margin: 50px;
+    background-color: rgb(137, 137, 138);
+    padding: 15px;
 }
 
 .admin .section {
