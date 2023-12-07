@@ -6,3 +6,40 @@
     text-align: center;
     color:black
 }
+
+.cart .parent {
+    display: flex;
+}
+
+.cart .side {
+    flex: 4;
+}
+
+.cart .prod-cart {
+    display: flex;
+    align-items: center;
+}
+
+.cart .prod-cart h5 {
+    flex: 4;
+}
+
+.cart .prod-cart label {
+    flex: 2;
+}
+
+.cart .prod-cart div {
+    flex:2;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.cart .prod-cart img {
+    height: 100px;
+    padding-left: 500px;
+    padding-bottom: 10px;
+}
+
+.cart .summary {
+    padding-right: 300px;
+}

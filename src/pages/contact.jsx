@@ -31,7 +31,7 @@ function Contact() {
 
   return (
     <div className="contact">
-      <h1>Contact</h1>
+      
 
       <div className="form">
         <h4>Give us your info</h4>

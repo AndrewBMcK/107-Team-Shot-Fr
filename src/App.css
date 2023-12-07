@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #59606e;
 }
 
 .App-logo {
@@ -38,5 +39,7 @@
 }
 
 .page {
-  height: calc(100vh - 144);
+  height: calc(100vh - 144px); /* or adjust the value based on your design */
 }
+
+

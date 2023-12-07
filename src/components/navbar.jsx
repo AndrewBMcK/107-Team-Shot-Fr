@@ -10,6 +10,16 @@ import GlobalContext from "../store/globalContext";
 function Navbar() {
 
   const user = useContext(GlobalContext).user;
+  const cart = useContext(GlobalContext).cart;
+
+  function getNumOfProducts() {
+    let total = 0;
+    for(let i=0; i<cart.length; i++) {
+      total += cart[i].quantity;
+    }
+
+    return total;
+  }
 
   return (
     <nav className="navbar">
@@ -18,37 +28,37 @@ function Navbar() {
       </Link>
       <ul className="nav-links">
         <li>
-          <i class="fa-solid fa-person-chalkboard"></i>
+          <i className="fa-solid fa-person-chalkboard"></i>
           <Link to="/coaching" className="nav-link">
             Coaching
           </Link>
         </li>
         <li>
-        <i class="fa-solid fa-bullhorn"></i>
+        <i className="fa-solid fa-bullhorn"></i>
           <Link to="/recruiting" className="nav-link">
             Recruiting
           </Link>
         </li>
         <li>
-        <i class="fa-solid fa-shop"></i>
+        <i className="fa-solid fa-shop"></i>
           <Link to="/catalog" className="nav-link">
             Store
           </Link>
         </li>
         <li>
-        <i class="fa-solid fa-book-open"></i>
+        <i className="fa-solid fa-book-open"></i>
           <Link to="/about" className="nav-link">
             About
           </Link>
         </li>
         <li>
-        <i class="fa-regular fa-envelope"></i>
+        <i className="fa-regular fa-envelope"></i>
           <Link to="/contact" className="nav-link">
             Contact
           </Link>
         </li>
         <li>
-        <i class="fa-solid fa-user-tie"></i>
+        <i className="fa-solid fa-user-tie"></i>
           <Link to="/admin" className="nav-link">
             Admin
           </Link>
@@ -57,11 +67,12 @@ function Navbar() {
       <form className="d-flex" role="search">
 
         <button type="button">
-          <i class="fa-regular fa-user"></i>
+          <i className="fa-regular fa-user"></i>
         {user.name}</button>
 
         <Link to="/cart" className="btn btn-outline-light">
-          <i class="fa-solid fa-cart-shopping"></i>
+          {getNumOfProducts()}
+          <i className="fa-solid fa-cart-shopping"></i>
         </Link>
       </form>
     </nav>

@@ -1,0 +1,9 @@
+.home {
+    width: 100%;
+}
+
+.home img {
+    width: 100%;
+    height: 400px; /* Adjust this value to your desired height */
+    object-fit: cover;
+}
