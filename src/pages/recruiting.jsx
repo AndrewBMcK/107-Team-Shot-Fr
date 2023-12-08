@@ -2,7 +2,7 @@ import "./recruiting.css";
 
 function Recruiting() {
     return (
-        <div>
+        <div className="page">
 
         </div>
     )

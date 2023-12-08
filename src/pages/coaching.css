@@ -1,24 +1,23 @@
-.coaching h2 {
-    color: aquamarine;
-}
-
 .card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 50px;
 }
 
 .card {
-    width: calc(25% - 20px);
+    width: calc(25% - 50px);
     margin-top: 50px;
     box-sizing: border-box;
+    background-color: blue;
 }
 
 .card-img-top {
     max-width: 100%; 
-    max-height: 150px; 
+    max-height: 130px; 
     object-fit: contain; /* Maintain aspect ratio without squishing */
+    background-color: #beebf8;
+    border-radius: 10px;
 }
 
 .card-link {

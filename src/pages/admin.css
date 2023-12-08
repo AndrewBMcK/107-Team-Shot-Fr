@@ -7,16 +7,18 @@
     flex: 2;
     min-height: 100px;
     margin: 50px;
-    background-color: rgb(128, 186, 224);
+    background-color: #61dafb;
     padding: 15px;
+    border-radius: 30px;
 }
 
 .admin .coupons {
     flex: 1;
     min-height: 100px;
     margin: 50px;
-    background-color: rgb(137, 137, 138);
+    background-color: #4dc995;
     padding: 15px;
+    border-radius: 30px;
 }
 
 .admin .section {

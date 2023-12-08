@@ -49,13 +49,13 @@ function Catalog() {
     }
 
     return(
-        <div className="catalog-container">
-            <button onClick={clearFilters} className="btn btn-sm btn-dark">all</button>
-            {categories.map(arrowCategories => <button key={arrowCategories} onClick={() => filter(arrowCategories)} className="btn btn-sm btn-primary btn-filter">{arrowCategories}</button>)}
-            <br></br>
+            <div className="catalog-container">
+                <button onClick={clearFilters} className="btn btn-sm btn-dark">all</button>
+                {categories.map(arrowCategories => <button key={arrowCategories} onClick={() => filter(arrowCategories)} className="btn btn-sm btn-primary btn-filter">{arrowCategories}</button>)}
+                <br></br>
 
-            {prodsToDisplay.map( arrowProduct => <Product key={arrowProduct._id} data={arrowProduct}/>)}
-        </div>
+                {prodsToDisplay.map( arrowProduct => <Product key={arrowProduct._id} data={arrowProduct}/>)}
+            </div>   
     );
 
 

@@ -55,7 +55,7 @@ function Admin() {
   }
 
   return (
-    <div className="admin">
+    <div className="admin page">
       
 
       <div className="parent">

@@ -30,42 +30,44 @@ function Contact() {
   }
 
   return (
-    <div className="contact">
-      
+    <div className="page">
+      <div className="contact">
+        
 
-      <div className="form">
-        <h4>Give us your info</h4>
+        <div className="form">
+          <h4>Give us your info</h4>
 
-        <div>
-          <label className="form-label"><i class="fa-solid fa-user"></i> Name </label>
-          <input
-            onChange={handleChange}
-            type="text"
-            className="form-control"
-          ></input>
-        </div>
+            <div>
+              <label className="form-label"><i class="fa-solid fa-user"></i> Name </label>
+              <input
+                onChange={handleChange}
+                type="text"
+                className="form-control"
+              ></input>
+            </div>
 
-        <div>
-          <label className="form-label"><i class="fa-regular fa-envelope"></i> Email </label>
-          <input onChange={handleEmail} type="email" className="form-control" />
-        </div>
+            <div>
+              <label className="form-label"><i class="fa-regular fa-envelope"></i> Email </label>
+              <input onChange={handleEmail} type="email" className="form-control" />
+            </div>
 
-        <div>
-          <label className="form-label"><i class="fa-solid fa-pen"></i> Message</label>
-          <textarea
-            onChange={handleMessage}
-            rows="3"
-            className="form-control"
-          ></textarea>
-        </div>
+            <div>
+              <label className="form-label"><i class="fa-solid fa-pen"></i> Message</label>
+              <textarea
+                onChange={handleMessage}
+                rows="3"
+                className="form-control"
+              ></textarea>
+            </div>
 
-        <div>
-          <button onClick={handleForm} className="btn btn-primary">
-            Send Message
-          </button>
+            <div>
+              <button onClick={handleForm} className="btn btn-primary">
+                Send Message
+              </button>
+            </div>
         </div>
       </div>
-    </div>
+    </div>  
   );
 }
 

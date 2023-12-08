@@ -33,8 +33,8 @@ function Coaching() {
     ];
 
     return (
-        <div>
-            <div className="card-container page">
+        <div className='page'>
+            <div className="card-container">
                 {/* Map over the card data and render MyCardComponent */}
                 {cardData.map((card, index) => (
                     <MyCardComponent key={index} {...card} />

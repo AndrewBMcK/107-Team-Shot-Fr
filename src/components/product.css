@@ -2,14 +2,15 @@
 
 .product {
     display: inline-block;
-    border: 1px solid #ddd;
+    border: 3px solid #2c2929;
     padding: 16px;
     text-align: center;
-    width: 300px;
+    width: 500px;
     margin: 8px;
-    background-color: #f5f5f5;
+    background-color: #f7f7f7;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease-in-out;
+    border-radius: 30px;
 }
 
 .product:hover {
@@ -19,9 +20,10 @@
 .product img {
     width: 100%;
     height: auto;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 6px solid #61dafb;
     margin-bottom: 10px;
     transition: transform 0.3s ease-in-out;
+    border-radius: 20px;
 }
 
 .product:hover img {
