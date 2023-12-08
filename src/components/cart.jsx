@@ -1,10 +1,9 @@
-import { useContext } from "react";
+import { useState, useContext } from "react";
 import "./cart.css";
 import GlobalContext from "../store/globalContext";
 
-// ... (your imports)
-
 function Cart() {
+    const [couponCode, setCouponCode] = useState("");
     const cart = useContext(GlobalContext).cart;
 
     function getNumOfProducts() {
@@ -21,6 +20,10 @@ function Cart() {
             totalPrice += cart[i].price * cart[i].quantity;
         }
         return totalPrice.toFixed(2);
+    }
+
+    function applyCoupon() {
+        console.log("Applying coupon:", couponCode);
     }
 
     return (
@@ -68,6 +71,19 @@ function Cart() {
                                 <span className="badge bg-success rounded-pill">${getTotalPrice()}</span>
                             </li>
                         </ul>
+                        <div className="mb-3">
+                            <label htmlFor="couponCode" className="form-label">Coupon Code:</label>
+                            <div className="input-group">
+                                <input
+                                    type="text"
+                                    className="form-control"
+                                    id="couponCode"
+                                    value={couponCode}
+                                    onChange={(e) => setCouponCode(e.target.value)}
+                                />
+                                <button className="btn btn-primary" onClick={applyCoupon}>Apply Coupon</button>
+                            </div>
+                        </div>
                         <div>
                             <button className="btn btn-success">Place your order</button>
                         </div>

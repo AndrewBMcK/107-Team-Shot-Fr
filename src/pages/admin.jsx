@@ -8,7 +8,8 @@ function Admin() {
     price: "",
     image: ""
   });
-
+  const[allProducts, setAllProducts] = useState([]);
+  const[allCoupons, setAllCoupons] = useState([]);
   const [coupon, setCoupon] = useState({
     code:'',
     discount:''
@@ -38,10 +39,19 @@ function Admin() {
 
   function saveCoupon() {
     console.log(coupon);
+    // save the coupon to the allCoupons list
+    let copy = [...allCoupons];
+    copy.push(coupon);
+    setAllCoupons(copy);
+
+    // TODO: send the coupon to the API
   }
 
   function saveProduct() {
     console.log(product);
+    let copy = [...allProducts]
+    copy.push(product);
+    setAllProducts(copy);
   }
 
   return (
@@ -75,6 +85,15 @@ function Admin() {
           <div>
             <button onClick={saveProduct} className="btn btn-primary">Save Product</button>
           </div>
+
+          {allProducts.map(prod =>
+              <div key={prod.title} className="product-item">
+                <img src={"/images/" + prod.image} alt="" />
+                <label className="lbl-title">{prod.title}</label>
+                <label className="lbl-price">${prod.price}</label>
+              </div>
+            )}
+
         </section>
 
         <section className="coupons">
@@ -95,6 +114,11 @@ function Admin() {
             <button onClick={saveCoupon} className="btn btn-primary">Save Coupon</button>
           </div>
 
+          {allCoupons.map(coupon => 
+            <div key={coupon.code} className="couponcode"> 
+              <label>{coupon.code} </label> 
+              <label>{coupon.discount} </label> 
+            </div>)}
 
         </section>
       </div>
